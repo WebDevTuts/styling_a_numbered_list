@@ -18,9 +18,10 @@
 				counter-increment: myCounter;
 				margin: 0 0 45px 0;
 				padding: 13px 0 0 65px;
+				position: relative;
 			}
 			ol.cities li::before { 
-				content: counter(myCounter);
+				content: counter(myCounter, decimal-leading-zero);
 				display: inline-block;
 				text-align: center;
 				font-size: 4em;
@@ -30,6 +31,9 @@
 				font-family: 'Roboto', sans-serif;
 				font-weight: 900;
 				padding: 10px;
+				position: absolute;
+				top: 0; left: -40px;
+				border-radius: 5px;
 			}			
 
 		</style>
